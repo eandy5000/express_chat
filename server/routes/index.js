@@ -15,7 +15,15 @@ router
     .route('/dashboard')
     .get((req, res) => {
         res
-            .send('<h1>I am the dashboard</h1>')
+            .render('test', {foo : "dog"})
+    })
+
+router
+    .route('*')
+    .get((req, res) => {
+        res
+            .status(404)
+            .json({"message": "Page not found"})
     })
 
 

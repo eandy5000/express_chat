@@ -7,6 +7,8 @@ const router = require('./routes')
 
 
 app.set('port', (process.env.PORT || 3000))
+app.set('view engine', 'ejs')
+app.set('views', (__dirname + '/views'))
 
 
 app.use('/', router)

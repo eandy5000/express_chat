@@ -13,7 +13,7 @@
     "node": "4.2.6"
   },
   "dependencies": {
-    "ejs": "^2.5.2",
-    "express": "4.14.0"
+    "express": "4.14.0",
+    "jade": "^1.11.0"
   }
 }
